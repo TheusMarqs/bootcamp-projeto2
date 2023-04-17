@@ -47,7 +47,6 @@ span {
     background-image: linear-gradient(180deg, #5C1D67, #1F0C22);
     border-radius: 6px;
     width: 94%;
-    height: 400px;
     margin: auto;
     box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
     margin-bottom: 0.5rem;
@@ -83,31 +82,23 @@ input {
     padding: 0.9rem;
 }
 
-.card-1 {
-    border-radius: 5px;
-    background-image: linear-gradient(180deg, #4670F1, #61A9F9);
-    border: 7px solid;
-    border-image: linear-gradient(45deg, #342A89, #2738DB) 10;
-    text-align: center;
+.borda {
+    border-radius: 0.3rem;
+    overflow: hidden;
+    padding-top: 0.3rem;
     width: 25%;
+    background-image: linear-gradient(45deg, #342A89, #2738DB);
+    display: flex;
+    justify-content: center;
 }
 
-.card-2 {
-    border-radius: 5px;
-    background-image: linear-gradient(180deg, #4670F1, #61A9F9);
-    border: 7px solid;
+.cards-p {
+    background-image: linear-gradient(180deg, #4670F1, #71CAFE);
+    border: 0.4rem solid;
     border-image: linear-gradient(45deg, #342A89, #2738DB) 10;
     text-align: center;
-    width: 25%;
-}
-
-.card-3 {
-    border-radius: 5px;
-    background-image: linear-gradient(180deg, #4670F1, #61A9F9);
-    border: 7px solid;
-    border-image: linear-gradient(45deg, #342A89, #2738DB) 10;
-    text-align: center;
-    width: 25%;
+    width: 95%;
+    border-radius: 0.3rem;
 }
 
 .card-title {
@@ -125,9 +116,58 @@ button {
     background-color: #1D0C20;
     color: #FFFFFD;
     margin: auto;
-    border-radius: 3px;
+    border-radius: 0.2rem;
     width: 50%;
     padding: 0.4rem;
     justify-content: center;
     margin-bottom: 0.4rem;
+    cursor: pointer;
+    padding: 0.7rem 2.5rem;
+    border: none;
+}
+
+p {
+    color: #FFFFFD;
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .flex-container {
+        width: 83%;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    button {
+        margin-bottom: -0.9rem;
+    }
+
+    .header-title {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cards-p {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .borda {
+        width: 60%;
+        overflow: hidden;
+    }
 }
